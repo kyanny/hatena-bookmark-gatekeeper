@@ -1,0 +1,15 @@
+{
+    "name": "Hatena Bookmark GateKeeper",
+    "version": "1.0",
+    "description": "stfuawsc",
+    "content_scripts": [
+        {
+            "matches": ["http://*/*"],
+            "js": ["jquery.js", "myscript.js"],
+             "run_at": "document_end"
+        }
+    ],
+    "permissions": [
+        "http://api.b.st-hatena.com/"
+    ]
+}
